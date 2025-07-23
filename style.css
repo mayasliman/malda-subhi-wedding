@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+   
+ 
+}
+.q{
+  width: 250px; /* formaat icoon */
+  height: 250px;
+  vertical-align: middle;
+  margin-right: 6px; /
+}header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 8s infinite;
+  z-index: -1;
+}
+
+.slide1 {
+  background-image: url("img/2a55a2f7-a584-4a9f-a52e-77a4e8cff44e.jpg");
+  animation-delay: 0s;
+}
+.slide2 {
+  background-image: url("img/79b9036e-76cd-43a7-8208-f64aeb3c0b1d.jpg");
+  animation-delay: 2s;
+}
+.slide3 {
+  background-image: url("img/64def543-9663-4c38-b777-46b15ff2904d.jpg");
+  animation-delay: 4s;
+}
+.slide4 {
+  background-image: url("img/552e7cc5-f9ba-41ed-81cd-722be092a53c.jpg");
+  animation-delay: 6s;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  12.5% { opacity: 1; }
+  37.5% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.details p {
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.calendar {
+  position: relative; /* ← deze regel is belangrijk */
+  margin-top: 30px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calendar img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.heart {
+  max-width: 40px;
+  height: auto;
+  position: absolute;
+  top: 69%; /* Pas deze waarde aan tot het hartje precies op 23 oktober staat */
+  left: 50%; /* Deze ook */
+  transform: translate(-50%, -50%);
+}
+.icon {
+  width: 16px; /* formaat icoon */
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 6px; /* ruimte tussen icoon en tekst */
+}
+.icondate {
+  width: 27px; /* formaat icoon */
+  height: 27px;
+  vertical-align: middle;
+  margin-right: 6px; /* ruimte tussen icoon en tekst */
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
