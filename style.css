@@ -11,15 +11,8 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
-   
- 
 }
-.q{
-  width: 250px; /* formaat icoon */
-  height: 250px;
-  vertical-align: middle;
-  margin-right: 6px; /
-}header {
+header {
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -29,52 +22,21 @@ body {
   text-align: center;
   color: white;
   font-family: "Playfair Display", serif;
-}
-
-.slideshow {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  animation: fade 8s infinite;
-  z-index: -1;
-}
-
-.slide1 {
-  background-image: url("img/2a55a2f7-a584-4a9f-a52e-77a4e8cff44e.jpg");
-  animation-delay: 0s;
-}
-.slide2 {
-  background-image: url("img/79b9036e-76cd-43a7-8208-f64aeb3c0b1d.jpg");
-  animation-delay: 2s;
-}
-.slide3 {
-  background-image: url("img/64def543-9663-4c38-b777-46b15ff2904d.jpg");
-  animation-delay: 4s;
-}
-.slide4 {
-  background-image: url("img/552e7cc5-f9ba-41ed-81cd-722be092a53c.jpg");
-  animation-delay: 6s;
-}
-
-@keyframes fade {
-  0% { opacity: 0; }
-  12.5% { opacity: 1; }
-  37.5% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 0; }
+  background: url("img/d7e501693b09091145d1f69f37bd1da2.jpg") center center /
+    cover no-repeat;
 }
 
 header h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
 }
 
 header p {
   font-size: 1.2rem;
   letter-spacing: 2px;
+  color: black;
 }
 
 section {
@@ -82,8 +44,6 @@ section {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-
-
 }
 
 h2 {
@@ -153,13 +113,12 @@ h2 {
   justify-content: center;
 }
 
-
 #playMusic:hover {
   background-color: rgb(109, 109, 109);
 }
-a{
+a {
   text-decoration: none;
-  color:  black;
+  color: black;
 }
 footer {
   text-align: center;
