@@ -23,7 +23,7 @@
     </header>
 
     <section class="details">
-      <h2>You are invited </h2>
+      <h2>You are invited</h2>
       <div class="calendar">
         <img
           src="img/9aa330ba-10ab-434c-8535-2ceb58f045af.jpg"
@@ -47,19 +47,36 @@
         <img src="img/67347.png" alt="Location icon" class="icon" /><strong
           >Location:</strong
         ><br />
-        Meet Much More<br />
+       <a href="https://www.google.com/maps/place/Meet+%26+much+more/@51.0544211,4.4585803,17z/data=!3m1!4b1!4m6!3m5!1s0x47c3e53a35ed527d:0xae613017865f83aa!8m2!3d51.0544211!4d4.4585803!16s%2Fg%2F11h4tp99jf?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D"  target="_blank"> Meet Much More<br />
         Schaliënhoevedreef 24, Mechelen, Belgium
-      </p>
+      </p> </a>
     </section>
-    <audio autoplay loop>
+    <button id="playMusic">🔊</button>
+
+    <audio id="mijnAudio" loop>
       <source src="Luminary.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
     <footer>Made with love — Malda & Subhi</footer>
+
     <script>
       const audio = document.getElementById("mijnAudio");
-      audio.volume = 0.2; // volume van 0 (stil) tot 1 (vol)
+      const button = document.getElementById("playMusic");
+
+      let isPlaying = false;
+
+      button.addEventListener("click", () => {
+        if (isPlaying) {
+          audio.pause();
+          button.textContent = "🔇"; // je kan hier ook een andere emoji gebruiken
+        } else {
+          audio.play();
+          audio.volume = 0.2;
+          button.textContent = " 🔊";
+        }
+        isPlaying = !isPlaying;
+      });
     </script>
   </body>
 </html>
